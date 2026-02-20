@@ -53,7 +53,7 @@ img {
 }
 
 .hero {
-  background-image: url(./img/29787513_m.jpg);
+  background-image: url(./img/kusumi.PNG);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -68,7 +68,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(118, 120, 128, 0.7);
   z-index: -1;
 }
 
