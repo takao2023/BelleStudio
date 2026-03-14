@@ -250,17 +250,46 @@ form .form-control {
 .footer-top {
   padding-bottom: 90px;
   padding: 90px;
-  background-color: var(--dark);
+  background-color: #efe3e5;
 }
 
 .footer-top a {
-  color: var(--body);
+  color: #555;
 }
 
 .footer-top a:hover {
-  color: #fff;
+  color: #333;
 }
 
 .footer-bottom {
   background-color: #242933;
+}
+
+/* レスポンシブ対応 */
+body {
+  overflow-x: hidden;
+}
+
+.row.w-100 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .row.w-100 img {
+    height: 200px !important;
+  }
+
+  .row.w-100.align-items-center {
+    flex-direction: column;
+  }
+
+  .row.w-100.align-items-center .col-lg-6 img {
+    height: 250px !important;
+    width: 100% !important;
+  }
+
+  .row.w-100.align-items-center .col-lg-6.p-5 {
+    padding: 2rem !important;
+  }
 }
