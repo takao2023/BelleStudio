@@ -2,7 +2,7 @@
 
 :root {
   --primary: #0d6efd;
-  --dark: #21252f;
+  --dark: #555;
   --body: #888;
   --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
 }
@@ -11,6 +11,7 @@ body {
   font-family: Sora, "sans-serif";
   line-height: 1.7;
   color: var(--body);
+  background-color: #fff;
 }
 
 h1,
@@ -38,7 +39,9 @@ img {
 }
 
 .logo {
-  width: 160px;
+  width: auto !important;
+  height: 80px;
+  object-fit: contain;
 }
 
 .navbar .nav-link {
@@ -50,6 +53,18 @@ img {
   padding: 14px 18px;
   border-width: 2px;
   border-radius: 0;
+}
+
+.btn-primary {
+  background-color: #efe3e5;
+  border-color: #efe3e5;
+  color: var(--dark);
+}
+
+.btn-primary:hover {
+  background-color: #DBBCC0;
+  border-color: #DBBCC0;
+  color: var(--dark);
 }
 
 .hero {
@@ -78,7 +93,7 @@ section {
 
 .card-effect {
   box-shadow: var(--box-shadow);
-  background-color: #fff;
+  background-color: #efe3e5;
   padding: 25px;
   transition: all 0.35s ease;
 }
@@ -134,12 +149,12 @@ section {
   opacity: 1;
   top: 0;
 }
-/* features section */
 
+/* features section */
 .col-img {
   background-image: url(./img/3662790_s.jpg);
   background-position: center;
-  background-size: cover; /* 画像の全部を収めることができる。 */
+  background-size: cover;
   min-height: 500px;
 }
 
@@ -187,6 +202,14 @@ section {
   width: 125px;
   height: 125px;
   border-radius: 100px;
+  object-fit: cover;
+}
+
+.course-img {
+  width: 100% !important;
+  height: 220px !important;
+  border-radius: 8px !important;
+  object-fit: cover;
 }
 
 .social-icons {
